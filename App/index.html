@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird | App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="background-options">
+        <label>Select Background -></label>
+        <button class="button" onclick="changeBackground('tokyo')">Tokyo</button>
+        <button class="button" onclick="changeBackground('seoul')">Seoul</button>
+        <button class="button" onclick="changeBackground('losangeles')">Los Angeles</button>
+    </div>
+
+    <canvas id="board"></canvas>
+
+    <a href="https://bartas058.github.io/FlappyBird/Home/" id="go-to-landing-page">Go To Landing Page -> Click Me</a>
+
+    <div class="social-icons">
+        <a href="https://github.com/Bartas058" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kasperprusak/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+    <div class="footer">
+        <footer>Designed by <a href="https://github.com/Bartas058" target="_blank">Bartas058</a> | <a href="https://pja.edu.pl/en/" target="_blank">Polish-Japanese Academy of Information Technology</a></footer>
+    </div>
+
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="../Sounds/game-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="loader"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../JavaScript/app.js"></script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/templates.js"></script>
+</body>
+</html>
